@@ -76,9 +76,6 @@ export default function PracticaPage() {
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-6">Implementación Práctica</h1>
-        <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Aprende a implementar el método de relajación paso a paso con ejemplos interactivos y código real.
-        </p>
       </div>
 
       <Tabs defaultValue="simulator" className="space-y-8">

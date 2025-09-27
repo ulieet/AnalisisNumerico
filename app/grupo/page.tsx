@@ -12,9 +12,9 @@ export default function GrupoSection() {
     <section id="grupo" className="py-20 bg-gradient-to-br from-slate-50 via-gray-50 to-slate-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 mt-10">Nuestro Grupo</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 mt-10">Jareds de numérico</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Grupo 6 - Equipo de desarrollo de la Calculadora de Errores
+            Grupo 6 - Metodo de Relajación - Análisis Numérico - UTN FRLP
           </p>
         </div>
 
