@@ -9,8 +9,12 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Método de Relajación - Sistema de Ecuaciones",
   description: "Análisis Numérico: Método de Relajación para Sistemas de Ecuaciones Lineales",
-    generator: 'v0.app'
+  generator: 'v0.app',
+  icons: {
+    icon: '/jared.png',    
+  },
 }
+
 
 export default function RootLayout({
   children,

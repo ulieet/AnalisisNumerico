@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Code, Database, Cpu, Globe } from "lucide-react"
+import { Code, Database, Cpu, Globe, MessageCircle } from "lucide-react"
 
 export default function TecnologiasPage() {
   return (
@@ -9,7 +9,6 @@ export default function TecnologiasPage() {
         <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-6">
           Tecnologías Utilizadas
         </h1>
-
       </div>
 
       {/* Stack Tecnológico */}
@@ -21,7 +20,7 @@ export default function TecnologiasPage() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-5 gap-6">
             <div className="text-center space-y-3">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
                 <Code className="h-8 w-8 text-primary" />
@@ -33,8 +32,8 @@ export default function TecnologiasPage() {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
                 <Database className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="font-semibold">Python + NumPy</h3>
-              <p className="text-sm text-muted-foreground">Utilizado para el procesamiento de datos y cálculos científicos de alto rendimiento</p>
+              <h3 className="font-semibold">NumPy</h3>
+              <p className="text-sm text-muted-foreground">Utilizado para el plot numérico</p>
             </div>
             <div className="text-center space-y-3">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
@@ -48,7 +47,14 @@ export default function TecnologiasPage() {
                 <Globe className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-semibold">GitHub + Vercel</h3>
-              <p className="text-sm text-muted-foreground">Control de versiones y despliegue automatico necesario para el proyecto</p>
+              <p className="text-sm text-muted-foreground">Control de versiones y despliegue automático necesario para el proyecto</p>
+            </div>
+            <div className="text-center space-y-3">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                <MessageCircle className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className="font-semibold">ChatGPT</h3>
+              <p className="text-sm text-muted-foreground">Asistente de IA utilizado para la comparacion de los metodos</p>
             </div>
           </div>
         </CardContent>

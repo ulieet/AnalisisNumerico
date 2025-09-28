@@ -22,7 +22,7 @@ export default function GrupoSection() {
           <div className="flex justify-center mb-12">
             <div className="relative w-80 h-75 rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center">
               <Image
-                src="/jaredletojesus.png"
+                src="/jared.png"
                 alt="Foto del Grupo 6"
                 width={320}
                 height={240}

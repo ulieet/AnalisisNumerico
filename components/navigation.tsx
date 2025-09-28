@@ -11,7 +11,7 @@ const navigation = [
   { name: "Inicio", href: "/" },
   { name: "Teoría", href: "/teoria" },
   { name: "Práctica", href: "/practica" },
-  { name: "Ejercicios", href: "/ejercicios" },
+  { name: "Comparación", href: "/comparacion" },
   { name: "Tecnologías", href: "/tecnologias" },
   { name: "Grupo", href: "/grupo" },
 ]

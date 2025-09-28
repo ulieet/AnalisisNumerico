@@ -14,7 +14,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground text-pretty">
               Presentación del desarrollo del método de relajación aplicado a sistemas de ecuaciones lineales.
-              Incluye fundamentos teóricos, implementación práctica y ejemplos resueltos para su análisis.
+              Incluye fundamentos teóricos, implementación práctica y comparaciones resueltas para su análisis.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button asChild size="lg">
@@ -44,10 +44,6 @@ export default function HomePage() {
             <p className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Contenido del informe
             </p>
-            <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              El trabajo se organiza en secciones para cubrir desde los conceptos teóricos hasta la aplicación
-              computacional del método, incluyendo análisis de resultados.
-            </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
@@ -58,7 +54,7 @@ export default function HomePage() {
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-muted-foreground">
                   <p className="flex-auto">
-                    Explicación del método de relajación, sus fundamentos matemáticos y condiciones de convergencia.
+                    Explicación del método de relajación, sus fundamentos matemáticos y ventajas y desventajas.
                   </p>
                   <p className="mt-6">
                     <Link href="/teoria" className="text-sm font-semibold leading-6 text-primary hover:text-primary/80">
@@ -70,12 +66,11 @@ export default function HomePage() {
               <div className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-foreground">
                   <Calculator className="h-5 w-5 flex-none text-primary" />
-                  Desarrollo e Implementación
+                  Desarrollo práctico
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-muted-foreground">
                   <p className="flex-auto">
-                    Algoritmo paso a paso y código implementado en TypeScript/Next.js para resolver sistemas de
-                    ecuaciones.
+                    Ejercicio resuelto para explicar como implementar este metodo
                   </p>
                   <p className="mt-6">
                     <Link
@@ -90,18 +85,18 @@ export default function HomePage() {
               <div className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-foreground">
                   <Zap className="h-5 w-5 flex-none text-primary" />
-                  Ejercicios y Resultados
+                  Ejercicio de comparacion
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-muted-foreground">
                   <p className="flex-auto">
-                    Casos de prueba resueltos con interpretación de resultados y conclusiones obtenidas.
-                  </p>
+                    Comparación del método de relajación con otros métodos iterativos para la resolucion de sistemas de ecuaciones lineales.
+                    </p>
                   <p className="mt-6">
                     <Link
-                      href="/ejercicios"
+                      href="/comparacion"
                       className="text-sm font-semibold leading-6 text-primary hover:text-primary/80"
                     >
-                      Ver ejercicios <span aria-hidden="true">→</span>
+                      Ver comparacion <span aria-hidden="true">→</span>
                     </Link>
                   </p>
                 </dd>
@@ -116,26 +111,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Conclusiones y Próximos Pasos
+              Conclusiones y Aprendizajes
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-muted-foreground">
-              El trabajo permitió comprender en profundidad el método de relajación y su aplicación computacional.
-              Próximos pasos: probar con sistemas más grandes y comparar con otros métodos iterativos.
+              El trabajo permitió comprender en profundidad el método de relajación y su aplicación en sistemas de ecuaciones lineales.
+              Se evidenciaron sus ventajas en términos de convergencia y eficiencia, así como sus limitaciones.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button asChild size="lg">
-                <Link href="/teoria">
-                  Leer informe completo
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button variant="outline" size="lg" asChild>
-                <Link href="/grupo">
-                  <Users className="mr-2 h-4 w-4" />
-                  Equipo de trabajo
-                </Link>
-              </Button>
-            </div>
+            
           </div>
         </div>
       </section>
