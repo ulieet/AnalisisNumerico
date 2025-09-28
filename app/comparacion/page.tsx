@@ -1,3 +1,6 @@
+import Image from "next/image";
+
+
 export default function ComparacionPage() {
   return (
     <div className="min-h-screen ">
@@ -108,8 +111,19 @@ export default function ComparacionPage() {
               </div>
             </div>
 
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Solución Exacta (verificada):</h3>
+            <div className="mt-12 flex justify-center">
+  <Image
+    src="/comparacion.jpeg"
+    alt="Gráfico comparativo"
+    width={600}
+    height={400}
+    className="rounded-xl shadow-lg"
+  />
+</div>
+
+
+            <div className="bg-gray-50 rounded-lg p-6 mt-10">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">Solución Exacta:</h3>
               <div className="text-2xl font-bold text-center space-y-2">
                 <div className="bg-white rounded-lg p-4 shadow-sm">
                   <span className="text-blue-600">x₁ = 1</span>
@@ -173,7 +187,7 @@ export default function ComparacionPage() {
             <div className="mt-8 bg-yellow-50 rounded-lg p-6 border-l-4 border-yellow-400">
               <h4 className="text-lg font-semibold text-yellow-800 mb-3">✅ Resultado de la Comparación:</h4>
               <p className="text-yellow-700 text-lg">
-                <strong>Las soluciones son idénticas.</strong> El método de relajación convergió a la solución exacta en
+                <strong>Las soluciones coinciden dentro de la tolerancia.</strong> El método de relajación convergió a la solución exacta en
                 4 iteraciones, demostrando su eficacia para este sistema de ecuaciones.
               </p>
             </div>
@@ -188,72 +202,10 @@ export default function ComparacionPage() {
             <div className="space-y-6 text-lg">
               <div className="bg-orange-50 rounded-lg p-6">
                 <h3 className="text-xl font-semibold text-orange-800 mb-4">📊 Análisis de Convergencia:</h3>
-                <ul className="space-y-3 text-orange-700">
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>
-                      <strong>Iteración 0:</strong> Vector inicial con residuos significativos (R₁=0,16, R₂=-0,1374,
-                      R₃=0,48)
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>
-                      <strong>Iteración 1:</strong> Corrección dramática, especialmente en X3 (2,5 → 2,98) y X2 (-1,7 →
-                      -1,96508)
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>
-                      <strong>Iteración 2:</strong> Ajuste fino en X1 (0,8 → 0,9915), alcanzando la solución exacta
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>
-                      <strong>Iteración 3:</strong> Confirmación de convergencia (todos los residuos = 0)
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2">•</span>
-                    <span>
-                      <strong>Iteración 4:</strong> Solución final (X1=0,9915, X2=-1,99054, X3=2,98)
-                    </span>
-                  </li>
-                </ul>
+                Cuando se toma el mayor residuo en valor absoluto en una iteración, en la iteración siguiente ese Residuo siempre dará "cero", ya que le estamos sumando a la variable asociada lo que faltaba para que la ecuación de cero.
               </div>
 
-              <div className="bg-blue-50 rounded-lg p-6">
-                <h3 className="text-xl font-semibold text-blue-800 mb-4">🎯 Características del Método:</h3>
-                <ul className="space-y-3 text-blue-700">
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">•</span>
-                    <span>
-                      <strong>Convergencia rápida:</strong> Solo 4 iteraciones para alcanzar la solución exacta
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">•</span>
-                    <span>
-                      <strong>Precisión:</strong> Los residuos se reducen a exactamente 0, indicando solución perfecta
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-blue-500 mr-2">•</span>
-                    <span>
-                      <strong>Eficiencia:</strong> El método es especialmente efectivo para matrices con diagonal
-                      dominante
-                    </span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-100 rounded-lg p-6">
-                <p className="text-gray-700 text-center italic">
-                  <strong>Nota:</strong> La solución fue verificada utilizando eliminación de Gauss, confirmando la exactitud del método de relajación implementado.
-                </p>
-              </div>
+             
             </div>
           </div>
         </div>
