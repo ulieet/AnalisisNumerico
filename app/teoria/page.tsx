@@ -57,12 +57,11 @@ export default function TeoriaPage() {
             <CardContent className="space-y-4">
               <ul className="list-disc list-inside space-y-3 text-muted-foreground">
                 <li>
-                  <strong className="text-foreground">Menor costo computacional:</strong> requiere menos operaciones que
-                  métodos directos.
+                  <strong className="text-foreground">Menor costo computacional:</strong> requiere menos operaciones con matrices que
+                  crecen en complejidad a medida que aumenta el número de incógnitas.
                 </li>
                 <li>
-                  <strong className="text-foreground">Memoria más eficiente:</strong> solo necesita el vector de
-                  incógnitas.
+                  <strong className="text-foreground">Memoria más eficiente:</strong> el método iterativo trabaja solo con el vector de incógnitas y no necesita almacenar toda la matriz aumentada.
                 </li>
                 <li>
                   <strong className="text-foreground">Flexibilidad:</strong> se puede detener cuando la aproximación es
