@@ -29,7 +29,7 @@ export default function PracticaRelajacionPage() {
           </TabsTrigger>
         </TabsList>
 
-        {/* PLANTEO */}
+         {/* PLANTEO */}
         <TabsContent value="planteo" className="space-y-8">
           <Card className="border-l-4 border-l-blue-500">
             <CardHeader>
@@ -38,12 +38,10 @@ export default function PracticaRelajacionPage() {
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="text-lg space-y-4">
-                <p>
-                  <strong>Problema:</strong>
-                </p>
+                <p><strong>Problema:</strong></p>
                 <p className="text-muted-foreground">
                   Resolver el siguiente sistema de ecuaciones utilizando el Método de Relajación con 4 iteraciones,
-                  mostrando los residuos y la actualización del vector en cada paso. 
+                  mostrando los residuos y la actualización del vector en cada paso.
                 </p>
 
                 <div className="bg-blue-50 dark:bg-blue-950/20 p-6 rounded-lg border border-blue-200 dark:border-blue-800">
@@ -59,10 +57,34 @@ export default function PracticaRelajacionPage() {
                   <p className="font-semibold text-green-800 dark:text-green-200 text-lg">Vector inicial:</p>
                   <p className="font-mono text-xl text-center mt-2">x⁽⁰⁾ = {"{0.8, -1.7, 2.5}"}</p>
                 </div>
+
+                <p className="text-muted-foreground">
+                  Primero identificamos matriz A, vector x y vector b. Luego dividimos cada ecuación por -aᵢᵢ para que el coeficiente diagonal quede en -1. En este caso:
+                </p>
+
+                <div className="bg-muted/50 p-6 rounded-lg">
+                  <ul className="list-disc list-inside text-lg space-y-2">
+                    <li>-x₁-3/10x₂ − 1/10x₃ = 7/10 (%por -10)</li>
+                    <li>-2/15x₁ − x₂ − 4/15x₃ = 16/15 (%por -15)</li>
+                    <li>-1/20x₁ − 2/20x₂ - x₃ = −57/20 (%por -20)</li>
+                  </ul>
+                </div>
+
+                <p className="text-muted-foreground">
+                  Se reescriben las ecuaciones en forma de residuos Rᵢ, quedando:
+                </p>
+
+                <div className="bg-amber-50 dark:bg-amber-950/20 p-6 rounded-lg border border-amber-200 dark:border-amber-800">
+                  <div className="font-mono text-lg space-y-2">
+                    <div>−x₁ − 0.3x₂ − 0.1x₃ + 0.7 = 0.16→ (R₁ → x₁)</div>
+                    <div>−0.133x₁ − x₂ − 0.266x₃ − 1.066 = -0.1374 → (R₂ → x₂)</div>
+                    <div>−0.05x₁ − 0.1x₂ − x₃ + 2.85 = 0.48 → (R₃ → x₃)</div>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
-        </TabsContent>
+        </TabsContent>  
 
         {/* ITERACIONES */}
         <TabsContent value="iteraciones" className="space-y-8">
@@ -80,7 +102,7 @@ export default function PracticaRelajacionPage() {
                 <div className="space-y-3 text-lg">
                   <p className="font-mono">x⁽⁰⁾ = {"{0.8, -1.7, 2.5}"}</p>
                   <div className="font-mono space-y-2">
-                    <p>R₁ = −(0.8) − 0.3(−1.7) − 0.1(2.5) + 0.7 = 0.16</p>
+                    <p>R₁ = −(0.8) − 0.3(−1.7) − 0.1(2.5) + 0.7 = 0.16 </p>
                     <p>R₂ = −0.133(0.8) − (−1.7) − 0.266(2.5) − 1.066 = −0.1374</p>
                     <p>R₃ = −0.05(0.8) − 0.1(−1.7) − (2.5) + 2.85 = 0.48</p>
                   </div>
@@ -102,8 +124,8 @@ export default function PracticaRelajacionPage() {
                 <div className="mt-6">
                   <iframe
                     className="w-full aspect-video rounded-lg border shadow-lg"
-                    src="https://www.youtube.com/embed/TU_VIDEO_ID"
-                    title="Video explicativo Iteración k=1"
+                  src="https://www.youtube.com/embed/1-gjx837xDM"                    
+                  title="Video explicativo Iteración k=1, k=2 y k=3"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>

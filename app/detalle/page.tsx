@@ -27,7 +27,7 @@ export default function DetallePage() {
           <CardContent className="space-y-4 font-mono text-lg">
             <p>x⁽¹⁾ = {"{0.8, -1.7, 2.98}"}</p>
             <p>R₁ = −(0.8) − 0.3(−1.7) − 0.1(2.98) + 0.7 = 0.112</p>
-            <p>R₂ = −0.133(0.8) − (−1.7) − 0.266(2.98) − 1.066 = −0.26508</p>
+            <p>R₂ = −0.133(0.8) − (−1.7) − 0.266(2.98) − 1.066 = 0.26508</p>
             <p>R₃ = −0.05(0.8) − 0.1(−1.7) − (2.98) + 2.85 = 0</p>
             <p className="font-semibold text-green-700 dark:text-green-300">
               |R₁|=0.112 |R₂|=0.26508 |R₃|=0 → el mayor es R₂, se corrige x₂:
