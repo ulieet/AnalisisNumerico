@@ -62,7 +62,7 @@ export default function DetallePage() {
           </CardHeader>
           <CardContent className="space-y-4 font-mono text-lg">
             <p>x⁽³⁾ = {"{0.9915, -1.96508, 2.98}"}</p>
-            <p>R₁ = −(0.9915) − 0.3(−1.96508) − 0.1(2.98) + 0 = 0</p>
+            <p>R₁ = −(0.9915) − 0.3(−1.96508) − 0.1(2.98) + 0.7 = 0</p>
             <p>R₂ = −0.133(0.9915) − (−1.96508) − 0.266(2.98) − 1.066 = −0.02546</p>
             <p>R₃ = −0.05(0.9915) − 0.1(−1.96508) − (2.98) + 2.85 = 0.01693</p>
             <p className="font-semibold text-orange-700 dark:text-orange-300">

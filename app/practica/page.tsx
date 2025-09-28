@@ -76,9 +76,9 @@ export default function PracticaRelajacionPage() {
 
                 <div className="bg-amber-50 dark:bg-amber-950/20 p-6 rounded-lg border border-amber-200 dark:border-amber-800">
                   <div className="font-mono text-lg space-y-2">
-                    <div>−x₁ − 0.3x₂ − 0.1x₃ + 0.7 = 0.16→ (R₁ → x₁)</div>
-                    <div>−0.133x₁ − x₂ − 0.266x₃ − 1.066 = -0.1374 → (R₂ → x₂)</div>
-                    <div>−0.05x₁ − 0.1x₂ − x₃ + 2.85 = 0.48 → (R₃ → x₃)</div>
+                    <div>−x₁ − 0.3x₂ − 0.1x₃ + 0.7 = 0 (R₁ → x₁)</div>
+                    <div>−0.133x₁ − x₂ − 0.266x₃ − 1.066 = 0 (R₂ → x₂)</div>
+                    <div>−0.05x₁ − 0.1x₂ − x₃ + 2.85 = 0 (R₃ → x₃)</div>
                   </div>
                 </div>
               </div>
@@ -135,7 +135,7 @@ export default function PracticaRelajacionPage() {
                     href="/detalle"
                     className="inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition-colors"
                   >
-                    Ver detalle completo de k=1
+                    Ver detalle completo de cada iteración
                   </a>
                 </div>
               </div>

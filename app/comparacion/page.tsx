@@ -112,13 +112,13 @@ export default function ComparacionPage() {
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Solución Exacta (verificada):</h3>
               <div className="text-2xl font-bold text-center space-y-2">
                 <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <span className="text-blue-600">x₁ = 0,9915</span>
+                  <span className="text-blue-600">x₁ = 1</span>
                 </div>
                 <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <span className="text-blue-600">x₂ = -1,99054</span>
+                  <span className="text-blue-600">x₂ = -2</span>
                 </div>
                 <div className="bg-white rounded-lg p-4 shadow-sm">
-                  <span className="text-blue-600">x₃ = 2,98</span>
+                  <span className="text-blue-600">x₃ = 3</span>
                 </div>
               </div>
             </div>
