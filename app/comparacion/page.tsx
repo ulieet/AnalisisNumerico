@@ -57,8 +57,8 @@ export default function ComparacionPage() {
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="border-2 border-gray-400 px-3 py-2 text-center font-semibold">2</td>
-                    <td className="border-2 border-gray-400 px-3 py-2 text-center bg-orange-300">0,1915</td>
-                    <td className="border-2 border-gray-400 px-3 py-2 text-center">0,8</td>
+                    <td className="border-2 border-gray-400 px-3 py-2 text-center bg-orange-300">0,8</td>
+                    <td className="border-2 border-gray-400 px-3 py-2 text-center">0,1915</td>
                     <td className="border-2 border-gray-400 px-3 py-2 text-center">-1,96508</td>
                     <td className="border-2 border-gray-400 px-3 py-2 text-center">0</td>
                     <td className="border-2 border-gray-400 px-3 py-2 text-center">2,98</td>
@@ -169,15 +169,15 @@ export default function ComparacionPage() {
                 <div className="space-y-3 text-lg">
                   <div className="flex justify-between">
                     <span>x₁:</span>
-                    <span className="font-bold">0,9915</span>
+                    <span className="font-bold">1</span>
                   </div>
                   <div className="flex justify-between">
                     <span>x₂:</span>
-                    <span className="font-bold">-1,99054</span>
+                    <span className="font-bold">-2</span>
                   </div>
                   <div className="flex justify-between">
                     <span>x₃:</span>
-                    <span className="font-bold">2,98</span>
+                    <span className="font-bold">3</span>
                   </div>
                   <div className="text-sm text-green-600 mt-4">Solución directa exacta</div>
                 </div>
